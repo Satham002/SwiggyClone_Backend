@@ -1,0 +1,25 @@
+                                npm init
+   
+   
+   Given yours entry point file name.
+        then we got pakeage.json file
+create one file name ${entry point file name}
+
+
+
+then.  install backend depedcnicy package.
+
+                                npm install express mongoose jsonwebtoken bcrypt cors dotenv body-parser multer validator nodemon stripe --save
+
+
+                                npm install express      => for install express
+                                npm install mongoose     => for install mongodb
+                                npm install jsonwebtoken => for install authntication system
+                                npm install bcrypt       => for install value cryption (for store database)
+                                npm install cors         => backend and fronted communication
+                                npm install dotenv       => for environment variable
+                                npm install body-parser  => for get user data
+                                npm install multer       => store image and song store system
+                                npm install validator    => login and signup validator
+                                npm install nodemon      => install for every save autonatically refresh
+                                npm install stripe       => install for payment gate feature
