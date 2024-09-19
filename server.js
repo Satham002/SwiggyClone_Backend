@@ -7,6 +7,9 @@ import foodRouter from './routes/foodRoutes.js';
 
 //app config
 const app = express();
+//middleware
+app.use(express.json())
+app.use(cors())
 const port = 5000;
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies (for form submissions)
 
@@ -18,10 +21,6 @@ connectDB();
 app.use("/api/food", foodRouter)
 app.use("/images", express.static('uplodes'));
 
-
-//middleware
-app.use(express.json())
-app.use(cors())
 
 app.get("/", (req, res) => {
     res.send("hello im woking")
