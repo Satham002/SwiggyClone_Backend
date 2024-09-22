@@ -2,5 +2,5 @@ import mongoose from 'mongoose'
 
 export const connectDB = async ()=>{
  
-    await mongoose.connect('mongodb+srv://sadhsh12:Sathya_Satham@cluster0.pz1bt.mongodb.net/Food-delivery').then(()=>(console.log("database Connect")))
+    await mongoose.connect(`${process.env.REACT_APP_API_URL}`).then(()=>(console.log("database Connect")))
 }
