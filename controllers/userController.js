@@ -12,8 +12,6 @@ const createToken = (id) => {
 const login_user = async (req, res) => {
 
     const { email, password } = req.body
-    // console.log({ email })
-    // console.log({ password })
     try {
         const user = await userModel.findOne({ email })
 
